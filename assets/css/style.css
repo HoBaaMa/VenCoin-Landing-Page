@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(#111, #222);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: #26A17B;
+    position: absolute;
+    z-index: -1;
+    clip-path: circle(40% at right 70%);
+
+}
+
+.container {
+    width: 80%;
+    height: 80%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.logo {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    width: 70px;
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    /* Center links */
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 6px;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.4s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #73ffd3;
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    margin: auto;
+}
+
+.content .text {
+    color: #FFF;
+    width: 40%;
+}
+
+.content .text h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    span {
+        color: #73ffd3;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.content .text h1 span:hover {
+    color: #FFF;
+}
+
+.content .text p {
+    font-size: 19px;
+    line-height: 25px;
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+
+.content .image {
+    width: 35%;
+}
+
+.content .image img {
+    width: 400px;
+}
+
+/* .text{
+    text-align: center;
+    justify-content: center;
+    p{
+        width: 40%;
+    }
+} */
