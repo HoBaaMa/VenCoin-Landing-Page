@@ -132,10 +132,133 @@ nav ul li a:hover {
     width: 400px;
 }
 
-/* .text{
-    text-align: center;
-    justify-content: center;
-    p{
-        width: 40%;
+/* Responsive */
+@media (max-width: 1150px) {
+    .content .image img {
+        width: 330px;
     }
-} */
+}
+
+@media (max-width: 950px) {
+
+    .content,
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* Center items */
+    }
+
+    .content .text {
+        width: 80%;
+        /* Adjust text width */
+        text-align: center;
+        /* Center text */
+    }
+
+    .content .image {
+        width: 80%;
+        /* Adjust image width */
+        display: flex;
+        justify-content: center;
+        /* Center image */
+    }
+
+    body::after {
+        clip-path: circle(50% at bottom);
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        font-size: 24px;
+        /* Smaller logo font size */
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        /* Smaller link font size */
+    }
+
+    .content .text h1 {
+        font-size: 30px;
+        /* Smaller heading font size */
+    }
+
+    .content .text p {
+        font-size: 16px;
+        /* Smaller paragraph font size */
+    }
+
+    .content .image img {
+        width: 250px;
+        /* Smaller image size */
+    }
+}
+
+/* Existing styles remain unchanged */
+
+@media (max-width: 1150px) {
+    .content .image img {
+        width: 330px;
+        /* Adjust image size */
+    }
+}
+
+@media (max-width: 950px) {
+
+    .content,
+    nav {
+        flex-direction: column;
+        /* Stack items vertically */
+        justify-content: center;
+        align-items: center;
+        /* Center items */
+    }
+
+    .content .text {
+        width: 80%;
+        /* Adjust text width */
+        text-align: center;
+        /* Center text */
+    }
+
+    .content .image {
+        width: 80%;
+        /* Adjust image width */
+        display: flex;
+        justify-content: center;
+        /* Center image */
+    }
+
+    body::after {
+        clip-path: circle(50% at bottom);
+    }
+}
+
+@media (max-width: 800px) {
+    .logo {
+        font-size: 20px;
+        /* Smaller logo font size */
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        /* Smaller link font size */
+    }
+
+    .content .text h1 {
+        font-size: 28px;
+        /* Smaller heading font size */
+    }
+
+    .content .text p {
+        font-size: 15px;
+        /* Smaller paragraph font size */
+    }
+
+    .content .image img {
+        width: 200px;
+        /* Smaller image size */
+    }
+}
